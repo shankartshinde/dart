@@ -10,6 +10,8 @@ import 'package:dart_handson_exercise/exercise/exercise1.dart';
 import 'package:dart_handson_exercise/exercise/exercise4.dart';
 import 'package:dart_handson_exercise/exercise/exercise5.dart';
 import 'package:dart_handson_exercise/exercise/exercise6.dart';
+import 'package:dart_handson_exercise/exercise/exercise7.dart';
+import 'package:dart_handson_exercise/exercise/exercise8.dart';
 
 void main(List<String> arguments) {
   print('Hello world: ${dart_handson_exercise.calculate()}!');
@@ -17,6 +19,8 @@ void main(List<String> arguments) {
   // exercise2();
   // exercise3();
   // exercise4();
-  exercise5();
-  exercise6();
+  // exercise5();
+  // exercise6();
+  // exercise7();
+  exercise8();
 }
