@@ -6,6 +6,10 @@ https://hackmd.io/@kuzmapetrovich/S1x90jWGP
 import 'package:dart_handson_exercise/dart_handson_exercise.dart'
     as dart_handson_exercise;
 import 'package:dart_handson_exercise/exercise/exercise10.dart';
+import 'package:dart_handson_exercise/exercise/exercise11.dart';
+import 'package:dart_handson_exercise/exercise/exercise12.dart';
+import 'package:dart_handson_exercise/exercise/exercise13.dart';
+import 'package:dart_handson_exercise/exercise/exercise14.dart';
 import 'package:dart_handson_exercise/exercise/exercise2.dart';
 import 'package:dart_handson_exercise/exercise/exercise3.dart';
 import 'package:dart_handson_exercise/exercise/exercise1.dart';
@@ -28,7 +32,11 @@ void main(List<String> arguments) {
 
   //exercise8();
   //exercise9();
-  exercise10();
+  //exercise10();
+  //exercise11();
+  //exercise12();
+  //exercise13();
+  //exercise14();
 }
 
 void createMapExample() {
