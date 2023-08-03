@@ -26,10 +26,8 @@ int getFourDigitNumber() {
   List<int> numbers = [firstDigit, secondDigit, thirdDigit, fourthDigit];
   numbers.shuffle();
   String combinedNumber = numbers.join();
-  if(combinedNumber.length != 4) {
-    getFourDigitNumber();
-  }
-  return int.parse(combinedNumber);
+  //return int.parse(combinedNumber);
+  return  1000 + randomizer.nextInt(9999-1000);
 }
 
 // if number matches at place then add to 'cow' else 'bull'
