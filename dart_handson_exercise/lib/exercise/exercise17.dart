@@ -19,29 +19,49 @@ import 'dart:io';
 
 exercise17() {
   stdout.writeln("What size game board they want to draw? ie. 2,3,4,5");
-  int? userValueOnCommandLine =  int.tryParse(stdin.readLineSync()!);
+  int? userValueOnCommandLine = int.tryParse(stdin.readLineSync()!);
   if (userValueOnCommandLine == null) {
     print("Invalid input");
   } else {
-  String sleepingLine = " ---";
-  String standingLine = "|";
-  int n = userValueOnCommandLine;
-  int m = userValueOnCommandLine;
-  for (var i = 0; i < n; i++) {
+    String sleepingLine = " ---";
+    String standingLine = "|";
+    int n = userValueOnCommandLine;
+    int m = userValueOnCommandLine;
+
+    for (var i = 0; i < n; i++) {
+      for (var j = 0; j < m; j++) {
+        stdout.write(sleepingLine);
+      }
+      stdout.writeln();
+      for (var k = 0; k < m + 1; k++) {
+        stdout.write(standingLine);
+        stdout.write("   ");
+      }
+      stdout.writeln();
+    }
+
     for (var j = 0; j < m; j++) {
       stdout.write(sleepingLine);
     }
     stdout.writeln();
-    for (var k = 0; k < m + 1; k++) {
-      stdout.write(standingLine);
-      stdout.write("   ");
-    }
-    stdout.writeln();
+
+    print("******** Alternative solution::  using print function board is designed *******");
+    //Note :: you can use alternative as well
+    drawBoard(n);
+  }
+}
+
+void drawBoard(int squareSize) {
+  // Basic building blocks
+  String rowLines = " ---";
+  String colLines = "|   ";
+
+  // For loop for drawing the board
+  for (var i = 0; i < squareSize; i++) {
+    print(rowLines * squareSize);
+    print(colLines * (squareSize + 1));
   }
 
-  for (var j = 0; j < m; j++) {
-    stdout.write(sleepingLine);
-  }
-  stdout.writeln();
-  }
+  // Add the last line to the board
+  print("${rowLines * squareSize}\n");
 }
