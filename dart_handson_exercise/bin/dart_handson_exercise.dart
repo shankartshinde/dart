@@ -11,7 +11,10 @@ import 'package:dart_handson_exercise/exercise/exercise12.dart';
 import 'package:dart_handson_exercise/exercise/exercise13.dart';
 import 'package:dart_handson_exercise/exercise/exercise14.dart';
 import 'package:dart_handson_exercise/exercise/exercise15.dart';
+import 'package:dart_handson_exercise/exercise/exercise16.dart';
 import 'package:dart_handson_exercise/exercise/exercise2.dart';
+import 'package:dart_handson_exercise/exercise/exercise26.dart';
+import 'package:dart_handson_exercise/exercise/exercise27.dart';
 import 'package:dart_handson_exercise/exercise/exercise3.dart';
 import 'package:dart_handson_exercise/exercise/exercise1.dart';
 import 'package:dart_handson_exercise/exercise/exercise4.dart';
@@ -38,7 +41,10 @@ void main(List<String> arguments) {
   //exercise12();
   //exercise13();
   //exercise14();
-  exercise15();
+  // exercise15();
+  exercise16();
+  // exercise26();
+  //exercise27();
 }
 
 void createMapExample() {

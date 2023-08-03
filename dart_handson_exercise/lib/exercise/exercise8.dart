@@ -50,6 +50,10 @@ String getUserChoice(int index) {
 }
 
 String getResult(Choices computer, Choices user) {
+  if (computer == Choices.rock && user == Choices.rock) {
+    return "Attempt is  ${Result.tie.name}";
+  }
+
   if (computer == Choices.rock) {
     return "Computer ${Result.win.name} and you ${Result.lose.name}";
   } else if (user == Choices.rock) {
@@ -63,10 +67,6 @@ String getResult(Choices computer, Choices user) {
   }
 
   if (computer == Choices.scissors && user == Choices.scissors) {
-    return "Attempt is  ${Result.tie.name}";
-  }
-
-  if (computer == Choices.rock && user == Choices.rock) {
     return "Attempt is  ${Result.tie.name}";
   }
 
