@@ -19,6 +19,7 @@ import 'dart:math';
 final randomizer = Random();
 //Randomly generate a 4-digit number.
 int getFourDigitNumber() {
+  /*
   int firstDigit = randomizer.nextInt(9) + 1;
   int secondDigit = randomizer.nextInt(9) + 1;
   int thirdDigit = randomizer.nextInt(9) + 1;
@@ -26,10 +27,9 @@ int getFourDigitNumber() {
   List<int> numbers = [firstDigit, secondDigit, thirdDigit, fourthDigit];
   numbers.shuffle();
   String combinedNumber = numbers.join();
-  if(combinedNumber.length != 4) {
-    getFourDigitNumber();
-  }
   return int.parse(combinedNumber);
+  */
+  return  1000 + randomizer.nextInt(9999-1000);
 }
 
 // if number matches at place then add to 'cow' else 'bull'
