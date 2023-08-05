@@ -129,8 +129,8 @@ void readJSONFile() async {
   final file = File(getJSONFilePath());
   String jsonString = await file.readAsString();
   final jsonObject = jsonDecode(jsonString);
-  jsonObject["Subrahmanyan Chandrasekhar"] = "19/10/1910";
-  jsonObject["Stephanie Kwolek"] = "07/11/1923";
+  jsonObject["Subrahmanyan Chandrasekhar"] = "1910/10/19";
+  jsonObject["Stephanie Kwolek"] = "1923/07/11";
   print("JSON Object ::: $jsonObject");
   //file.writeAsString(jsonEncode(jsonObject));
   print("JSON encode :: ${jsonEncode(jsonObject)}");
