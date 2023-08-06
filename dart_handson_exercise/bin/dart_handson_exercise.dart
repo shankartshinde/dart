@@ -22,6 +22,7 @@ import 'package:dart_handson_exercise/exercise/exercise2.dart';
 import 'package:dart_handson_exercise/exercise/exercise21.dart';
 import 'package:dart_handson_exercise/exercise/exercise22.dart';
 import 'package:dart_handson_exercise/exercise/exercise23.dart';
+import 'package:dart_handson_exercise/exercise/exercise24.dart';
 import 'package:dart_handson_exercise/exercise/exercise26.dart';
 import 'package:dart_handson_exercise/exercise/exercise27.dart';
 import 'package:dart_handson_exercise/exercise/exercise28.dart';
@@ -57,7 +58,8 @@ void main(List<String> arguments) {
   //exercise18();
   //exercise21();
   //exercise22();
-  exercise23();
+  //exercise23();
+  exercise24();
   //exercise26();
   //exercise27();
   //exercise28();
