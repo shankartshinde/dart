@@ -86,7 +86,7 @@ void checkWhoIsWinner(List<List<int>> twoDArray) {
 
         //This condition - comparing user two entry
         if (userInputRowWise == secondUser) {
-          isFirstUserFoundSecondaryDiagonally++;
+          isSecondUserFoundSecondaryDiagonally++;
         }
       }
     }
@@ -104,12 +104,12 @@ void checkWhoIsWinner(List<List<int>> twoDArray) {
   }
 
   if (isFirstUserFoundPrimaryDiagonally == 3 ||
-      isFirstUserFoundPrimaryDiagonally == 3) {
+      isFirstUserFoundSecondaryDiagonally == 3) {
     print("First user win diagonally");
     isWinnerFound = true;
   }
   if (isSecondUserFoundPrimaryDiagonally == 3 ||
-      isFirstUserFoundSecondaryDiagonally == 3) {
+      isSecondUserFoundSecondaryDiagonally == 3) {
     print("Second user win diagonally");
     isWinnerFound = true;
   }
