@@ -11,18 +11,15 @@ void exercise4() {
   stdout.writeln("Enter number which you want find list of divisors");
   String? input = stdin.readLineSync().toString();
   int number = int.parse(input);
-  print(getDivisor(number));
-
-  if(input != null) {
-
-  }
+  print("Divisor of $number are ${getDivisor(number)}");
 }
 
 List<int> getDivisor(int number) {
   List<int> result = <int>[];
-  result.add(1);
-  result.add(2);
-  result.add(3);
-  result.add(4);
+  for (var i = 1; i < number/2; i++) {
+    if(number % i == 0) {
+      result.add(i);
+    }
+  }
   return result;
 }
